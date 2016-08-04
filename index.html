@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Joshua Haan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body id="app">
+  <header class="jumbotron">
+    <div class="container">
+      <div class="row">
+
+        <div class="img-container col-md-4">
+          <img class="profile-img" src="media/profile.jpg">
+        </div>
+      
+        <div class="col-md-8">
+          <h1 class="text">Joshua Haan</h1>
+          <h3 class="text">Web Developer</h3>
+          <p class="media-heading pitch">{{ pitch }}</p>
+          <h3>
+            <span class="icon" v-for="link in socialLinks">
+              <a v-bind:href="link.href" v-bind:title="link.name" target="_blank">
+                <i v-bind:class="link.icon" aria-hidden="true"></i>
+              </a>
+            </span>
+          </h3>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects">
+      <div class="row">
+        <div class="col-md-4" v-for="project in projects">
+          <div class="thumbnail"> 
+            <img v-bind:src="project.imageUrl"/>
+            <div class="caption">
+              <p>
+                <a v-bind:href="project.githubUrl" title="GitHub Repo" target="_blank">
+                  <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                  See Code
+                </a>
+                <a v-if="project.linkUrl" v-bind:href="project.linkUrl" title="Project Link" target="_blank">
+                  <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+                  See Site
+                </a>
+              </p>
+              <h4 class="text">
+                {{ project.name }}
+              </h4>
+              <p class="text">{{ project.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+  </main>
+ 
+  <script src="https://use.fontawesome.com/6d6680158d.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.22/vue.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>

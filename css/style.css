@@ -1,0 +1,71 @@
+/*$gray: #BFBAA8;*/
+/*$blue: #00398E;*/
+/*$white: #FFF;*/
+/*$pink: #F2DCC2;*/
+/*$tan: #A67F5D;*/
+/*$brown: #594336;*/
+/*$dark-grey: #333;*/
+body {
+  background-image: url(../media/background-fog.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat; }
+  body a {
+    color: #F4F4F4;
+    transition: all .2s ease-in-out; }
+  body a:hover {
+    color: #DADADA; }
+  body .text {
+    color: #282828; }
+  body .jumbotron {
+    background-color: #282828; }
+    body .jumbotron .text {
+      color: #F4F4F4; }
+    body .jumbotron .img-container {
+      margin: auto;
+      margin-top: 2em; }
+    body .jumbotron .profile-img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #F4F4F4; }
+    body .jumbotron .pitch {
+      text-align: justify;
+      padding-top: 1.5em;
+      color: #F4F4F4; }
+    body .jumbotron .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start; }
+  body .well {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #F4F4F4;
+    margin-bottom: 100vh; }
+  body .projects {
+    border-top: none;
+    color: #282828; }
+    body .projects h2 {
+      text-align: center; }
+    body .projects h3 {
+      text-align: center;
+      margin-bottom: 1.5em; }
+    body .projects .thumbnail {
+      background-color: #F4F4F4; }
+  body .caption a {
+    color: #2F3A71; }
+  body .caption a:hover {
+    color: #101A3F; }
+  body .row {
+    display: flex;
+    flex-wrap: wrap; }
+
+.icon {
+  font-size: 250%;
+  margin-right: 5px; }
+
+@media (min-width: 768px) {
+  .icon {
+    font-size: 150%; } }
