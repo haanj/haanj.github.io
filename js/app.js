@@ -35,7 +35,7 @@ var vm = new Vue({
     projects: [
       {
         name: "Personal Portfolio",
-        description: "This portfolio website was created to display various project highlights. I used Vue.js, SCSS, and Twitter Bootstrap on the front end. The site is served using Node.js on a small DigitalOcean Droplet.",
+        description: "This portfolio website was created to display various project highlights. I used Vue.js, SCSS, and Twitter Bootstrap on the front end.",
         imageUrl: "media/fog.jpg",
         githubUrl: "https://github.com/haanj/personalPortfolio"
       },
